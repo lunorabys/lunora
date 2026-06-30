@@ -1,0 +1,1311 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="X-XXXXX-Aapka-Google-Code-Yahan-Aayega"/>
+<title>LUNORA Bracelets - Real Fashion, Real Prices</title>
+<meta name="description" content="LUNORA - Pakistan ki sabse stylish handmade bracelets. Simple, Charm aur Chain bracelets WhatsApp par order karein.">
+<link rel="icon" type="lunora/jpeg" href="lunora.jpeg">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --brown:#8B4513;
+  --brown-dark:#5c3a21;
+  --brown-light:#c8845a;
+  --cream:#fdfaf6;
+  --cream2:#f5ede3;
+  --cream3:#fff5eb;
+  --border-color:#eaddcf;
+  --text:#4a3525;
+  --text-light:#7a6050;
+  --white:#ffffff;
+  --gold:#ffb703;
+  --red:#e63946;
+}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:var(--cream);color:var(--text);min-height:100vh}
+
+/* ---- HERO ---- */
+.hero{background:linear-gradient(135deg,#fdf5ed 0%,#f0e0cc 50%,#e8d0b8 100%);padding:50px 20px 40px;text-align:center;position:relative;overflow:hidden;border-bottom:1px solid var(--border-color)}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:rgba(139,69,19,0.05);border-radius:50%}
+.hero::after{content:'';position:absolute;bottom:-40px;left:-40px;width:150px;height:150px;background:rgba(139,69,19,0.04);border-radius:50%}
+.hero-logo{font-size:52px;font-weight:900;letter-spacing:8px;color:var(--brown);font-family:Georgia,serif;animation:fadeDown 0.8s ease}
+.hero-tagline{font-size:15px;color:var(--text-light);letter-spacing:3px;margin:8px 0 20px;animation:fadeDown 1s ease}
+.hero-sub{font-size:13px;color:var(--text-light);animation:fadeDown 1.2s ease}
+.hero-badges{display:flex;justify-content:center;gap:12px;margin-top:20px;flex-wrap:wrap;animation:fadeUp 1s ease}
+.hero-badge{background:var(--white);border:1px solid var(--border-color);border-radius:20px;padding:6px 16px;font-size:12px;color:var(--brown);font-weight:600}
+
+/* ---- STATS BAR ---- */
+.stats-bar{display:flex;justify-content:center;gap:0;background:var(--brown);overflow:hidden}
+.stat-item{flex:1;max-width:200px;text-align:center;padding:16px 10px;border-right:1px solid rgba(255,255,255,0.15);color:white}
+.stat-item:last-child{border-right:none}
+.stat-num{font-size:22px;font-weight:800;display:block}
+.stat-label{font-size:11px;opacity:0.85;letter-spacing:1px}
+
+/* ---- NAV ---- */
+.nav-section{padding:25px 20px 10px;text-align:center}
+.nav-title{font-size:12px;letter-spacing:2px;color:var(--text-light);margin-bottom:14px;text-transform:uppercase}
+.nav-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.nav-pill{padding:9px 20px;border:1.5px solid var(--brown);border-radius:25px;background:transparent;color:var(--brown);font-weight:600;font-size:13px;cursor:pointer;transition:all 0.25s;text-decoration:none;display:inline-block}
+.nav-pill:hover,.nav-pill.active{background:var(--brown);color:white}
+
+/* ---- SEARCH & FILTER ---- */
+.search-section{padding:20px;max-width:600px;margin:0 auto}
+.search-wrap{position:relative}
+.search-input{width:100%;padding:12px 20px 12px 45px;border:1.5px solid var(--border-color);border-radius:30px;font-size:14px;background:white;color:var(--text);outline:none;transition:border 0.2s}
+.search-input:focus{border-color:var(--brown)}
+.search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--brown-light);font-size:18px;pointer-events:none}
+.filter-pills{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;justify-content:center}
+.filter-pill{padding:6px 14px;border:1px solid var(--border-color);border-radius:20px;background:white;color:var(--text-light);font-size:12px;cursor:pointer;transition:all 0.2s}
+.filter-pill:hover,.filter-pill.active{background:var(--brown);color:white;border-color:var(--brown)}
+
+/* ---- SECTION HEADER ---- */
+.section-header{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;margin-top:10px}
+.section-title{font-size:18px;font-weight:700;color:var(--brown);letter-spacing:1px}
+.section-line{flex:1;height:1px;background:var(--border-color);margin:0 15px}
+.view-btn{padding:8px 18px;border:1.5px solid var(--brown);border-radius:20px;background:transparent;color:var(--brown);font-weight:600;font-size:12px;cursor:pointer;transition:all 0.2s}
+.view-btn:hover{background:var(--brown);color:white}
+
+/* ---- SLIDER ---- */
+.slider{display:flex;gap:14px;overflow-x:auto;scroll-behavior:smooth;padding:10px 20px 20px;scrollbar-width:thin;scrollbar-color:var(--border-color) transparent}
+.slider::-webkit-scrollbar{height:5px}
+.slider::-webkit-scrollbar-thumb{background:var(--border-color);border-radius:4px}
+
+/* ---- PRODUCT CARD ---- */
+.product-container{min-width:160px;max-width:160px;width:160px;flex-shrink:0;text-align:center;background:white;border:1px solid var(--border-color);border-radius:16px;padding:12px;position:relative;transition:all 0.3s;cursor:pointer}
+.product-container:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(139,69,19,0.12);border-color:var(--brown-light)}
+.box{height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:10px;background:#faf7f4;position:relative}
+.box img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s}
+.product-container:hover .box img{transform:scale(1.05)}
+.product-name{font-size:12px;font-weight:700;color:var(--text);margin:10px 0 3px;line-height:1.3}
+.product-price{font-size:13px;font-weight:800;color:var(--brown);margin:4px 0}
+.stars{color:var(--gold);font-size:12px;margin:2px 0}
+.stars span{font-size:11px;color:var(--text-light)}
+
+/* ---- BADGES ---- */
+.badge{position:absolute;top:8px;left:8px;font-size:10px;font-weight:700;padding:3px 8px;border-radius:12px;z-index:2;letter-spacing:0.5px}
+.badge-new{background:var(--brown);color:white}
+.badge-best{background:var(--gold);color:#5c3a21}
+.badge-sale{background:var(--red);color:white}
+.badge-pair{position:static;display:inline-block;background:var(--cream2);color:var(--brown);font-size:10px;padding:2px 7px;border-radius:10px;font-weight:600;margin-top:2px}
+
+/* ---- WISHLIST ---- */
+.wishlist-btn{position:absolute;top:8px;right:8px;background:white;border:1px solid var(--border-color);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;z-index:2;transition:all 0.2s;color:#ccc}
+.wishlist-btn:hover,.wishlist-btn.active{color:var(--red);border-color:var(--red)}
+.wishlist-btn.active{background:#fff0f0}
+
+/* ---- ORDER SECTION ---- */
+.order-section{display:none;margin-top:10px;padding:10px;border-top:1px dashed var(--border-color);background:var(--cream3);border-radius:8px;text-align:center;animation:fadeUp 0.3s ease}
+.order-label{color:var(--brown);font-size:12px;margin-bottom:6px}
+.size-select{padding:6px;margin:6px 0;border-radius:8px;border:1.5px solid var(--brown);background:white;font-weight:600;color:var(--brown);width:85%;font-size:12px;cursor:pointer}
+.order-btn{background:var(--brown);color:white;border:none;padding:9px 0;border-radius:10px;cursor:pointer;font-weight:700;font-size:12px;width:100%;margin-top:6px;transition:background 0.2s;letter-spacing:0.5px}
+.order-btn:hover{background:var(--brown-dark)}
+
+/* ---- ALL PRODUCTS GRID ---- */
+.all-products{display:none;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;padding:10px 20px 20px}
+
+/* ---- DELIVERY BAR ---- */
+.delivery-bar-wrap{padding:0 20px 10px;display:flex;justify-content:center}
+.delivery-bar{background:linear-gradient(135deg,#fdf8f5,#f7f0ea);border:1px solid var(--border-color);padding:12px 28px;border-radius:50px;display:flex;align-items:center;gap:10px;max-width:560px;width:100%;justify-content:center}
+.truck-icon{font-size:20px;animation:bounce 2s infinite}
+.delivery-text{color:var(--brown);font-size:13px}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+
+/* ---- REVIEWS ---- */
+.reviews-section{max-width:780px;margin:30px auto;background:white;padding:30px;border-radius:20px;border:1px solid var(--border-color)}
+.reviews-title{font-size:20px;font-weight:700;color:var(--brown);text-align:center;margin-bottom:6px}
+.reviews-sub{text-align:center;font-size:13px;color:var(--text-light);margin-bottom:24px}
+.review-card{border-bottom:1px solid var(--border-color);padding:16px 0;animation:fadeUp 0.4s ease}
+.review-card:last-child{border-bottom:none}
+.review-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.reviewer-name{font-weight:700;color:var(--brown);font-size:14px}
+.review-comment{font-size:13px;color:var(--text-light);line-height:1.6}
+.review-date{font-size:11px;color:#bbb;margin-top:4px}
+.review-form-box{margin-top:28px;background:var(--cream);padding:22px;border-radius:14px;border:1px solid var(--border-color)}
+.review-form-title{font-size:15px;font-weight:700;color:var(--brown);margin-bottom:14px;text-align:center}
+.star-picker{display:flex;justify-content:center;gap:6px;margin-bottom:14px;font-size:28px}
+.star-picker span{cursor:pointer;color:#ddd;transition:color 0.15s;user-select:none}
+.star-picker span.lit{color:var(--gold)}
+.form-input{width:100%;padding:11px 14px;border:1.5px solid var(--border-color);border-radius:10px;font-size:13px;font-family:inherit;color:var(--text);background:white;outline:none;margin-bottom:10px;transition:border 0.2s}
+.form-input:focus{border-color:var(--brown)}
+.submit-btn{background:var(--brown);color:white;border:none;padding:12px;border-radius:10px;cursor:pointer;font-weight:700;width:100%;font-size:14px;transition:background 0.2s;letter-spacing:0.5px}
+.submit-btn:hover{background:var(--brown-dark)}
+
+/* ---- FLOATING WA BUTTON ---- */
+.wa-float{position:fixed;bottom:24px;right:24px;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 20px rgba(37,211,102,0.4);z-index:999;transition:transform 0.2s;text-decoration:none}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:32px;height:32px;fill:white}
+.wa-tooltip{position:fixed;bottom:90px;right:20px;background:#25D366;color:white;padding:7px 14px;border-radius:10px;font-size:12px;font-weight:600;z-index:998;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.3s}
+.wa-float:hover+.wa-tooltip{opacity:1}
+
+/* ---- WISHLIST DRAWER ---- */
+.wishlist-count{position:fixed;top:20px;right:20px;background:var(--brown);color:white;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;z-index:999;box-shadow:0 2px 10px rgba(139,69,19,0.3);transition:transform 0.2s}
+.wishlist-count:hover{transform:scale(1.1)}
+.wishlist-badge{position:absolute;top:-4px;right:-4px;background:var(--red);color:white;font-size:10px;font-weight:700;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;display:none}
+
+/* ---- ANIMATIONS ---- */
+@keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---- MOBILE ---- */
+@media(max-width:600px){
+  .hero-logo{font-size:38px;letter-spacing:5px}
+  .stats-bar{flex-wrap:wrap}
+  .stat-item{flex:1;min-width:50%}
+  .all-products{grid-template-columns:repeat(2,1fr)}
+  .product-container{min-width:140px;max-width:140px}
+  .wa-float{bottom:16px;right:16px;width:52px;height:52px}
+}
+
+hr{border:none;border-top:1px solid var(--border-color);margin:10px 20px}
+</style>
+</head>
+<body>
+
+<!-- FLOATING WISHLIST -->
+<div class="wishlist-count" onclick="toggleWishlistView()" title="Wishlist">
+  ♡
+  <div class="wishlist-badge" id="wlBadge">0</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-logo">LUNORA</div>
+  <div class="hero-tagline">✦ Handmade with Love ✦</div>
+  <div class="hero-sub">Color Combination of Your Choice</div>
+  <div class="hero-badges">
+    <span class="hero-badge">🌸 Handmade</span>
+    <span class="hero-badge">📦 Cash on Delivery</span>
+    <span class="hero-badge">💬 WhatsApp Orders</span>
+    <span class="hero-badge">✨ Custom Sizes</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-num">500+</span><span class="stat-label">Happy Customers</span></div>
+  <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Handmade</span></div>
+  <div class="stat-item"><span class="stat-num">35+</span><span class="stat-label">Designs</span></div>
+  <div class="stat-item"><span class="stat-num">⭐ 4.9</span><span class="stat-label">Rating</span></div>
+</div>
+
+<!-- NAV -->
+<div class="nav-section">
+  <div class="nav-title">Shop by Category</div>
+  <div class="nav-pills">
+    <a class="nav-pill" href="#simple">Simple</a>
+    <a class="nav-pill" href="#charm">Charm</a>
+    <a class="nav-pill" href="#chain">Chain</a>
+    <a class="nav-pill" href="#new-arrivals">✨ New Arrivals</a>
+    <a class="nav-pill" href="#reviews-section">Reviews</a>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-section">
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input class="search-input" type="text" id="searchInput" placeholder="Bracelet search karein... e.g. Moon, Panda, Bow" oninput="filterProducts()">
+  </div>
+  <div class="filter-pills">
+    <span class="filter-pill active" onclick="setFilter('all',this)">All</span>
+    <span class="filter-pill" onclick="setFilter('simple',this)">Simple</span>
+    <span class="filter-pill" onclick="setFilter('charm',this)">Charm</span>
+    <span class="filter-pill" onclick="setFilter('chain',this)">Chain</span>
+    <span class="filter-pill" onclick="setFilter('new',this)">New Arrivals</span>
+    <span class="filter-pill" onclick="setFilter('pair',this)">Pairs</span>
+  </div>
+</div>
+
+<hr>
+
+<!-- SIMPLE BRACELETS -->
+<div class="section-header" id="simple">
+  <span class="section-title">Simple Bracelets</span>
+  <div class="section-line"></div>
+  <button class="view-btn" onclick="toggleView('slider','allProducts',this)">View All</button>
+</div>
+
+<div class="slider" id="slider">
+
+  <div class="product-container" data-cat="simple" data-name="moon bracelet">
+    <div class="badge badge-best">Bestseller</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Moon Bracelet','RS 150')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple1',this)"><img src="tyyyy.jpeg" alt="Moon Bracelet"/></div>
+    <div class="product-name">MOON BRACELET</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 150</div>
+    <div class="order-section" id="s-simple1">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Moon Bracelet','RS 150',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple" data-name="star bracelet">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Star Bracelet','RS 160')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple2',this)"><img src="cuteee.jpeg" alt="Star Bracelet"/></div>
+    <div class="product-name">STAR BRACELET</div>
+    <div class="stars">★★★★☆ <span>(2)</span></div>
+    <div class="product-price">RS 160 <span class="badge-pair">1 piece</span></div>
+    <div class="order-section" id="s-simple2">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Star Bracelet','RS 160',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple" data-name="moon lilac lilic">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Moon Lilac','RS 150')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple3',this)"><img src="uuuuuuuu.jpeg" alt="Moon Lilac"/></div>
+    <div class="product-name">MOON LILAC</div>
+    <div class="stars">★★★★★ <span>(4)</span></div>
+    <div class="product-price">RS 150</div>
+    <div class="order-section" id="s-simple3">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Moon Lilac','RS 150',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple" data-name="simple heart bracelet">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Simple Heart Bracelet','RS 120')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple4',this)"><img src="ooooooo.jpeg" alt="Simple Heart"/></div>
+    <div class="product-name">SIMPLE HEART</div>
+    <div class="stars">★★★★☆ <span>(5)</span></div>
+    <div class="product-price">RS 120 <span class="badge-pair">1 piece</span></div>
+    <div class="order-section" id="s-simple4">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Simple Heart Bracelet','RS 120 (1 piece)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple" data-name="white purple bracelet">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'White Purple','RS 180 (1 PIECE)')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple6',this)"><img src="tty.jpeg" alt="White Purple"/></div>
+    <div class="product-name">WHITE PURPLE</div>
+    <div class="stars">★★★★☆ <span>(6)</span></div>
+    <div class="product-price">RS 180 <span class="badge-pair">1 piece</span></div>
+    <div class="order-section" id="s-simple6">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('White Purple','RS 180 (1PIECE)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple" data-name="baby pink bracelet">
+    <div class="badge badge-best">Bestseller</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Baby Pink','RS 180')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple7',this)"><img src="iiiiiiieee.jpeg" alt="Baby Pink"/></div>
+    <div class="product-name">BABY PINK</div>
+    <div class="stars">★★★★★ <span>(2)</span></div>
+    <div class="product-price">RS 180</div>
+    <div class="order-section" id="s-simple7">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Baby Pink','RS 180',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple" data-name="simple korean bracelet">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Simple Korean','RS 100')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple8',this)"><img src="nnnn.jpeg" alt="Simple Korean"/></div>
+    <div class="product-name">SIMPLE KOREAN</div>
+    <div class="stars">★★★★☆ <span>(1)</span></div>
+    <div class="product-price">RS 100 <span class="badge-pair">1 piece</span></div>
+    <div class="order-section" id="s-simple8">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Simple Korean','RS 100 (1 piece)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple" data-name="cute bracelet">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Cute Bracelet','RS 100')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple9',this)"><img src="rt.jpeg" alt="Cute Bracelet"/></div>
+    <div class="product-name">CUTE BRACELET</div>
+    <div class="stars">★★★★★ <span>(4)</span></div>
+    <div class="product-price">RS 100</div>
+    <div class="order-section" id="s-simple9">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Cute Bracelet','RS 100',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple pair" data-name="maron bracelet">
+    <div class="badge badge-best">Bestseller</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Maron Bracelet','RS 200 pair')">♡</button>
+    <div class="box" onclick="toggleOrder('s-custom-unique',this)"><img src="MARON SIMPLE.jpeg" alt="Maron Bracelet"/></div>
+    <div class="product-name">MARON BRACELET</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 200 (PAIR)<span class="badge-pair">pair</span></div>
+    <div class="order-section" id="s-custom-unique">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Maron Bracelet','RS 200 (pair)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple pair" data-name="white grey bracelet">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'White & Grey','RS 230 pair')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple11',this)"><img src="WHITE & GREY PAIR.jpeg" alt="White & Grey"/></div>
+    <div class="product-name">WHITE & GREY</div>
+    <div class="stars">★★★★★ <span>(1)</span></div>
+    <div class="product-price">RS 230 <span class="badge-pair">pair</span></div>
+    <div class="order-section" id="s-simple11">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('White & Grey','RS 230 (Pair)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="simple" data-name="small beads bracelet">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Small Beads Bracelet','RS 90')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple12',this)"><img src="SMALL BEADS.jpeg" alt="Small Beads"/></div>
+    <div class="product-name">SMALL BEADS</div>
+    <div class="stars">★★★★★ <span>(6)</span></div>
+    <div class="product-price">RS 90</div>
+    <div class="order-section" id="s-simple12">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Small Beads Bracelet','RS 90',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+<!-- Box 1 -->
+<div class="product-container" data-cat="simple" data-name="grey & white moon">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'grey & white moon', 'RS 160')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple1', this)"><img src="grey & white moon.jpg" alt="grey and white"></div>
+    <div class="product-name">grey & white moon</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="product-price">RS 160</div>
+    <div class="order-section" id="s-simple1">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('grey & white moon', 'RS 160', this)">🛒 Order on whatsapp</button>
+    </div>
+</div>
+
+<!-- Box 2 -->
+<div class="product-container" data-cat="simple" data-name="baby pink">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'baby pink', 'RS 120')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple2', this)"><img src="baby pink.jpg" alt="baby pink"></div>
+    <div class="product-name">baby pink</div>
+    <div class="stars">★★★★★ <span>(4)</span></div>
+    <div class="product-price">RS 120</div>
+    <div class="order-section" id="s-simple2">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+
+        <button class="order-btn" onclick="sendOrder('baby pink', 'RS 120', this)">🛒 Order on WhatsApp</button>
+    </div>
+</div>
+
+<!-- Box 3 -->
+<div class="product-container" data-cat="simple" data-name="mat simple">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'mat simple', 'RS 140')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple3', this)"><img src="mat simple.jpg" alt="mat simple"></div>
+    <div class="product-name">mat simple</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 140</div>
+    <div class="order-section" id="s-simple3">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('mat simple', 'RS 140', this)">🛒 Order on WhatsApp</button>
+    </div>
+</div>
+
+<!-- Box 4 -->
+<div class="product-container" data-cat="simple" data-name="shocking">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'shocking', 'RS 130')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple4', this)"><img src="shocking bracelet.jpg" alt="shocking"></div>
+    <div class="product-name">shocking</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="product-price">RS 130</div>
+    <div class="order-section" id="s-simple4">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('shocking', 'RS 130', this)">🛒 Order on whatsapp</button>
+    </div>
+</div>
+
+<!-- Box 5 -->
+<div class="product-container" data-cat="simple" data-name="pearl bracelets">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'product 5', 'RS 90')">♡</button>
+    <div class="box" onclick="toggleOrder('s-simple5', this)"><img src="pearl bracelets.jpeg" alt="pearl"></div>
+    <div class="product-name">Pearl bracelet</div>
+    <div class="stars">★★★★★ <span>(4)</span></div>
+    <div class="product-price">RS 130 (1 piece)</div>
+    <div class="order-section" id="s-simple5">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('pearl bracelets', 'RS 130 (1 piece)', this)">🛒 Order</button>
+    </div>
+</div>
+
+</div>
+
+<div class="delivery-bar-wrap">
+  <div class="delivery-bar">
+    <span class="truck-icon">🚚</span>
+    <span class="delivery-text"><strong>Delivery:</strong> RS. 200 shipping charges applicable on every purchase.!</span>
+  </div>
+</div>
+<div class="all-products" id="allProducts"></div>
+
+<hr>
+
+<!-- CHARM BRACELETS -->
+<div class="section-header" id="charm">
+  <span class="section-title">Charm Bracelets</span>
+  <div class="section-line"></div>
+  <button class="view-btn" onclick="toggleView('charmSlider','charmProducts',this)">View All</button>
+</div>
+
+<div class="slider" id="charmSlider">
+
+  <div class="product-container" data-cat="charm" data-name="ice cream charm">
+    <div class="badge badge-best">Bestseller</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Ice-cream Charm','RS 200')">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm1',this)"><img src="ice-cream charm.png" alt="Ice-cream Charm"/></div>
+    <div class="product-name">ICE-CREAM CHARM</div>
+    <div class="stars">★★★★★ <span>(2)</span></div>
+    <div class="product-price">RS 200</div>
+    <div class="order-section" id="s-charm1">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Ice-cream Charm','RS 200',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="charm" data-name="bow charm">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Bow Charm','RS 230')">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm2',this)"><img src="BOW CHARM.jpeg" alt="Bow Charm"/></div>
+    <div class="product-name">BOW CHARM</div>
+    <div class="stars">★★★★☆ <span>(5)</span></div>
+    <div class="product-price">RS 230</div>
+    <div class="order-section" id="s-charm2">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Bow Charm','RS 230',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="charm" data-name="flower charm">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Flower Charm','RS 200')">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm3',this)"><img src="flower charm.png" alt="Flower Charm"/></div>
+    <div class="product-name">FLOWER CHARM</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 200</div>
+    <div class="order-section" id="s-charm3">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Flower Charm','RS 200',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="charm pair" data-name="panda friendship charm">
+    <div class="badge badge-best">Bestseller</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Panda Charm','RS 400 pair')">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm4',this)"><img src="panda friend ship.jpeg" alt="Panda friendship Charm"/></div>
+    <div class="product-name">PANDA FRIENDSHIP CHARM</div>
+    <div class="stars">★★★★★ <span>(2)</span></div>
+    <div class="product-price">RS 400 <span class="badge-pair">pair</span></div>
+    <div class="order-section" id="s-charm4">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Panda friendship Charm','RS 400 (pair)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="charm pair" data-name="friendship charm">
+    <div class="badge badge-best">Top Rated</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'3 Friendship Charm','RS 750 (3 piece'))">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm5',this)"><img src="three friend ship bracelets.jpeg" alt="Friendship Charm"/></div>
+    <div class="product-name">3 FRIENDSHIP CHARM bracelets</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 750 <span class="badge-pair">3 piece</span></div>
+    <div class="order-section" id="s-charm5">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('3 Friendship Charm','RS 750 (3 piece)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="charm pair" data-name="flowere charm pair">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Panda Friendship Charm','RS 350 pair')">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm6',this)"><img src="FLOWER CHARM Pair.jpeg" alt="flower charm"/></div>
+    <div class="product-name">flower charm pair</div>
+    <div class="stars">★★★★☆ <span>(5)</span></div>
+    <div class="product-price">RS 350 <span class="badge-pair">pair</span></div>
+    <div class="order-section" id="s-charm6">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('flower Charm pair','RS 350',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="charm pair" data-name="donut donot charm">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'BABY PINK FLOWER CHARM','RS 180 pair')">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm7',this)"><img src="baby pink heart.jpg" alt="flower charm"/></div>
+    <div class="product-name">BABY PINK FLOWER  CHARM</div>
+    <div class="stars">★★★★★ <span>(2)</span></div>
+    <div class="product-price">RS 180</div>
+    <div class="order-section" id="s-charm7">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('baby pink flower Charm','RS 180',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="charm pair" data-name="large bow charm">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Large Bow Charm','RS 210 pair')">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm8',this)"><img src="large bow charm.jpeg" alt="Large Bow Charm"/></div>
+    <div class="product-name">LARGE BOW CHARM</div>
+    <div class="stars">★★★★★ <span>(1)</span></div>
+    <div class="product-price">RS 210</div>
+    <div class="order-section" id="s-charm8">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Large Bow Charm','RS 210 (pair)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="charm" data-name="cute charm bracelet">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Cute Charm Bracelets','RS 180')">♡</button>
+    <div class="box" onclick="toggleOrder('s-charm9',this)"><img src="CUTE CHARM.jpeg" alt="Cute Charm"/></div>
+    <div class="product-name">CUTE CHARM</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="product-price">RS 210</div>
+    <div class="order-section" id="s-charm9">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+
+      <button class="order-btn" onclick="sendOrder('Cute Charm Bracelets','RS 210',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+<!-- Box 1 -->
+ <div class="product-container" data-cat="charm" data-name="baby pink bow charm">
+  <button class="wishlist-btn" onclick="toggleWishlist(this, 'baby pink bow charm', 'RS 180')">🤍</button>
+  <div class="box" onclick="toggleOrder('s-charm10', this)">
+      <img src="BABY PINK BOW CHARM.jpeg" alt="baby pink bow">
+  </div>
+  <div class="product-name">baby pink bow charm</div>
+  <div class="stars">★★★★★ <span>(5)</span></div>
+  <div class="product-price">RS 180</div>
+  <div class="order-section" id="s-charm10">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('baby pink bow charm', 'RS 180', this)">Order Now</button>
+  </div>
+</div>
+<!-- Box [Next Number] -->
+<div class="product-container" data-cat="charm" data-name="heart charm">
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'heart charm', 'RS (210)')">🤍</button>
+    <div class="box" onclick="toggleOrder('[New ID]', this)">
+        <img src="heart charm.jpeg" alt="[New Alt Text]">
+    </div>
+    <div class="product-name">heart charm</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 210</div>
+    <div class="order-section" id="s-charm10">
+        <div class="order-label">Apna Size Select Karein:</div>
+        <select class="size-select">
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('heart charm', 'RS 210', this)">Order Now</button>
+    </div>
+</div>
+<div class="product-container" data-cat="new charm" data-name="kroumi charm">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'kroumi charm bracelet', 'RS 200')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new11', this)"><img src="kroumi charm.jpeg" alt="kroumi"></div>
+    <div class="product-name">kroumi charm</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="product-price">RS 200</div>
+    <div class="order-section" id="s-new11">
+        <div>Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('kroumi charm', 'RS 200', this)">Order on WhatsApp</button>
+    </div>
+</div>
+
+<div class="product-container" data-cat="new charm" data-name="Product Name 4">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'white flower charm', 'RS 180')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new12', this)"><img src="white flower charm.jpeg" alt="white charm"></div>
+    <div class="product-name">white flower charm</div>
+    <div class="stars">★★★★★ <span>(6)</span></div>
+    <div class="product-price">RS 180</div>
+    <div class="order-section" id="s-new12">
+        <div>Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('white flower charm', 'RS 180', this)">Order on WhatsApp</button>
+    </div>
+</div>
+</div>
+
+<div class="delivery-bar-wrap">
+  <div class="delivery-bar">
+    <span class="truck-icon">🚚</span>
+    <span class="delivery-text"><strong>Delivery:</strong> RS. 200 shipping charges applicable on every purchase.!</span>
+  </div>
+</div>
+<div class="all-products" id="charmProducts"></div>
+
+<hr>
+
+<!-- CHAIN BRACELETS -->
+<div class="section-header" id="chain">
+  <span class="section-title">Chain Bracelets</span>
+  <div class="section-line"></div>
+  <button class="view-btn" onclick="toggleView('chainSlider','chainProducts',this)">View All</button>
+</div>
+
+<div class="slider" id="chainSlider">
+
+  <div class="product-container" data-cat="chain" data-name="butterfly chain">
+    <div class="badge badge-best">Bestseller</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Butterfly Chain','RS 270')">♡</button>
+    <div class="box" onclick="toggleOrder('s-chain1',this)"><img src="B.P BUTTERFLY CHAIN.jpeg" alt="Butterfly Chain"/></div>
+    <div class="product-name">BUTTERFLY CHAIN</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 270</div>
+    <div class="order-section" id="s-chain1">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Butterfly Chain','RS 270',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="chain" data-name="ice cream chain">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Ice Cream Chain','RS 260')">♡</button>
+    <div class="box" onclick="toggleOrder('s-chain2',this)"><img src="ice cream chain.jpeg" alt="Ice Cream Chain"/></div>
+    <div class="product-name">ICE CREAM CHAIN</div>
+    <div class="stars">★★★★☆ <span>(5)</span></div>
+    <div class="product-price">RS 260</div>
+    <div class="order-section" id="s-chain2">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Ice Cream Chain','RS 260',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="chain" data-name="butterfly c chain">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Butterfly C Chain','RS 300')">♡</button>
+    <div class="box" onclick="toggleOrder('s-chain3',this)"><img src="BUTTERFlY.C CHAIN.png" alt="Butterfly C Chain"/></div>
+    <div class="product-name">BUTTERFLY.C CHAIN</div>
+    <div class="stars">★★★★★ <span>(1)</span></div>
+    <div class="product-price">RS 300</div>
+    <div class="order-section" id="s-chain3">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Butterfly C Chain','RS 300',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="chain" data-name="leave  chain">
+    <div class="badge badge-best">Bestseller</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Leave Chain','RS 290')">♡</button>
+    <div class="box" onclick="toggleOrder('s-chain5',this)"><img src="LEAVE CHAIN.jpeg" alt="Leave Chain"/></div>
+    <div class="product-name">LEAVE CHAIN</div>
+    <div class="stars">★★★★★ <span>(2)</span></div>
+    <div class="product-price">RS 290</div>
+    <div class="order-section" id="s-chain5">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Leave Chain','RS 290',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="chain" data-name="panda chain">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Panda Chain','RS 270')">♡</button>
+    <div class="box" onclick="toggleOrder('s-chain6',this)"><img src="PANDA CHAIN.jpeg" alt="Panda Chain"/></div>
+    <div class="product-name">PANDA CHAIN</div>
+    <div class="stars">★★★★★ <span>(1)</span></div>
+    <div class="product-price">RS 270</div>
+    <div class="order-section" id="s-chain6">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Panda Chain','RS 270',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="chain" data-name="moon chain">
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Moon Chain','RS 210')">♡</button>
+    <div class="box" onclick="toggleOrder('s-chain7',this)"><img src="MOON CHAIN.jpeg" alt="Moon Chain"/></div>
+    <div class="product-name">MOON CHAIN</div>
+    <div class="stars">★★★★☆ <span>(4)</span></div>
+    <div class="product-price">RS 210</div>
+    <div class="order-section" id="s-chain7">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Moon Chain','RS 210',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+<!-- Product 3 -->
+    <div class="product-container" data-cat="chain" data-name="bead chain">
+        <button class="wishlist-btn" onclick="toggleWishlist(this, 'bead chain', 'RS 220')">♡</button>
+        <div class="box" onclick="toggleOrder('s-chain8', this)"><img src="YU.jpeg" alt="Star Chain"></div>
+        <div class="product-name">bead chain</div>
+        <div class="stars">★★★★☆ <span>(2)</span></div>
+        <div class="product-price">RS 220</div>
+        <div class="order-section" id="s-chain8">
+            <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+            <button class="order-btn" onclick="sendOrder('bead chain', 'RS 220', this)">🛒 Order on WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-container" data-cat="chain" data-name="shell chain">
+        <button class="wishlist-btn" onclick="toggleWishlist(this, 'shell Chain', 'RS 250')">♡</button>
+        <div class="box" onclick="toggleOrder('s-chain9', this)"><img src="shell chain.jpeg" alt="shell Chain"></div>
+        <div class="product-name">HEART CHAIN</div>
+        <div class="stars">★★★★★ <span>(2)</span></div>
+        <div class="product-price">RS 250</div>
+        <div class="order-section" id="s-chain9">
+            <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+            <button class="order-btn" onclick="sendOrder('shell Chain', 'RS 250', this)">🛒 Order on WhatsApp</button>
+        </div>
+    </div>
+    <div class="product-container" data-cat="chain" data-name="new chain name">
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'multi moon chain', 'RS 150')">♡</button>
+    <div class="box" onclick="toggleOrder('s-chain10', this)">
+        <img src="multi moon chain.jpeg" alt="multi moon chain">
+    </div>
+    <div class="product-name">multi moon chain CHAIN</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 150</div>
+    <div class="order-section" id="s-chain10">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('multi moon chain', 'RS 150', this)">🛒 Order on WhatsApp</button>
+    </div>
+</div>
+</div>
+
+<div class="delivery-bar-wrap">
+  <div class="delivery-bar">
+    <span class="truck-icon">🚚</span>
+    <span class="delivery-text"><strong>Delivery:</strong> RS. 200 shipping charges applicable on every purchase.!</span>
+  </div>
+</div>
+<div class="all-products" id="chainProducts"></div>
+
+<hr>
+
+<!-- NEW ARRIVALS -->
+<div class="section-header" id="new-arrivals">
+  <span class="section-title">✨ New Arrivals</span>
+  <div class="section-line"></div>
+  <button class="view-btn" onclick="toggleView('newArrivalsSlider','newproducts',this)">View All</button>
+</div>
+
+<div class="slider" id="newArrivalsSlider">
+
+  <div class="product-container" data-cat="new charm" data-name="heart bracelet">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Heart Bracelet','RS 170')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new3',this)"><img src="hj.png" alt="Heart Bracelet"/></div>
+    <div class="product-name">HEART BRACELET</div>
+    <div class="stars">★★★★★ <span>(2)</span></div>
+    <div class="product-price">RS 170</div>
+    <div class="order-section" id="s-new3">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Heart Bracelet','RS 170',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="new charm" data-name="donut donot beads">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Donut','RS 200')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new4',this)"><img src="donot & beads.jpeg" alt="Donut"/></div>
+    <div class="product-name">DONUT</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="product-price">RS 200</div>
+    <div class="order-section" id="s-new4">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Donut','RS 200',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="new chain" data-name="donut moon chain">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Donut Moon Chain','RS 240')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new5',this)"><img src="donot moon chain.png" alt="Donut Moon Chain"/></div>
+    <div class="product-name">DONUT MOON CHAIN</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 240</div>
+    <div class="order-section" id="s-new5">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Donut Moon Chain','RS 240',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="new charm" data-name="unicorn unicon charm">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Unicorn Charm','RS 200')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new6',this)"><img src="unicon charm.jpeg" alt="Unicorn Charm"/></div>
+    <div class="product-name">UNICORN CHARM</div>
+    <div class="stars">★★★★★ <span>(4)</span></div>
+    <div class="product-price">RS 200</div>
+    <div class="order-section" id="s-new6">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Unicorn Charm','RS 200',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="new simple" data-name="full name bracelet custom">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Full Name Bracelets','RS 200')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new7',this)"><img src="full name bracelets.jpeg" alt="Full Name Bracelets"/></div>
+    <div class="product-name">FULL NAME BRACELET</div>
+    <div class="stars">★★★★★ <span>(4)</span></div>
+    <div class="product-price">RS 200 <span class="badge-pair">1 piece</span></div>
+    <div class="order-section" id="s-new7">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Full Name Bracelet','RS 200 (1 piece)',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="new" data-name="beautiful key chain keychain">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Beautiful Key Chain','RS 280')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new8',this)"><img src="beautifull key chain.jpeg" alt="Beautiful Key Chain"/></div>
+    <div class="product-name">BEAUTIFUL KEY CHAIN</div>
+    <div class="stars">★★★★★ <span>(2)</span></div>
+    <div class="product-price">RS 280</div>
+    <div class="order-section" id="s-new8">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Beautiful Key Chain','RS 280',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="new charm" data-name="mat bracelet beads charm">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Mat Bracelet W Charm','RS 230')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new9',this)"><img src="mat beads.w.charm.jpeg" alt="Mat Bracelet"/></div>
+    <div class="product-name">MAT BRACELET W CHARM</div>
+    <div class="stars">★★★★★ <span>(4)</span></div>
+    <div class="product-price">RS 230</div>
+    <div class="order-section" id="s-new9">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Mat Bracelet W Charm','RS 230',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="product-container" data-cat="new charm" data-name="baby donut donot bracelet">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this,'Baby Donut','RS 200')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new10',this)"><img src="baby donot bracelet.jpeg" alt="Baby Donut"/></div>
+    <div class="product-name">BABY DONUT</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 200</div>
+    <div class="order-section" id="s-new10">
+      <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+      <button class="order-btn" onclick="sendOrder('Baby Donut','RS 200',this)">🛒 Order on WhatsApp</button>
+    </div>
+  </div>
+  <!-- Product 1 -->
+<div class="product-container" data-cat="new charm" data-name="BUTTERFLY FRIENDSHIP">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'BUTTERFlY FRIENDSHIP', 'RS 400')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new11',this)"><img src="BUTTERFLY FRIENDSHIP.jpeg" alt="b.friendship"></div>
+    <div class="product-name">BUTTERFLY FRIENDSHIP</div>
+    <div class="stars">★★★★★ <span>(2)</span></div>
+    <div class="product-price">RS 400</div>
+    <div class="order-section" id="s-new11">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('BUTTERFLY FRIENDSHIP','RS 400',this)">🛒 Order on WhatsApp</button>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-container" data-cat="new charm" data-name="white heart  Charm">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'white heart charm', 'RS 200')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new12',this)"><img src="white heart charm.jpg" alt="white charm"></div>
+    <div class="product-name">WHITE HEART CHARM</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 200</div>
+    <div class="order-section" id="s-new12">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('WHITE HEART CHARM','RS 200',this)">🛒 Order on WhatsApp</button>
+    </div>
+</div>
+
+<!-- Product 3 -->
+<div class="product-container" data-cat="new charm" data-name="white & black simple">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'white & black simple', 'RS 250'(pair))">♡</button>
+    <div class="box" onclick="toggleOrder('s-new13',this)"><img src="white& black simple.jpeg" alt="W & B SIMPLE"></div>
+    <div class="product-name">WHITE & BLACK SIMPLE</div>
+    <div class="stars">★★★★★ <span>(5)</span></div>
+    <div class="product-price">RS 250 (PAIR)<span class="badge-pair">pair</span></div>
+    <div class="order-section" id="s-new13">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('WHITE & BLACK SIMPLE','RS 250 (PAIR)',this)">🛒 Order on WhatsApp</button>
+    </div>
+</div>
+
+<!-- Product 4 -->
+<div class="product-container" data-cat="new charm" data-name="WHITE & BABY PINK ">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'BLACK & LILIC .F/S', 'RS 450 (PAIR)')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new14',this)"><img src="black & lilac friend ship.jpeg" alt="BLACK & LILIC"></div>
+    <div class="product-name">BLACK & LILIC FRIENDSHIP</div>
+    <div class="stars">★★★★★ <span>(4)</span></div>
+    <div class="product-price">RS 450 (PAIR)<span class="badge-pair">pair</span></div>
+    <div class="order-section" id="s-new14"> 
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('BLACK & LILIC F/S','RS 450 (PAIR)',this)">🛒 Order on WhatsApp</button>
+    </div>
+</div>
+
+<!-- Product 5 -->
+<div class="product-container" data-cat="new charm" data-name="B.PINK & BLACK CHARM">
+    <div class="badge badge-new">New</div>
+    <button class="wishlist-btn" onclick="toggleWishlist(this, 'B.PINK & BLACK CHARM', 'RS 400 (PAIR)')">♡</button>
+    <div class="box" onclick="toggleOrder('s-new15',this)"><img src="B.PINK & BLACK CHARM.jpeg" alt="B.P & B CHARM"></div>
+    <div class="product-name">B.PINK & BLACK CHARM</div>
+    <div class="stars">★★★★★ <span>(3)</span></div>
+    <div class="product-price">RS 400 (PAIR)<span class="badge-pair">pair</span></div>
+    <div class="order-section" id="s-new15">
+        <div class="order-label">Apna Size Select Karein:</div>
+      <select class="size-select"><option>4 inch</option><option>5 inch</option><option>6 inch</option><option>7 inch</option><option>8 inch</option><option>9 inch</option><option>10 inch</option></select>
+        <button class="order-btn" onclick="sendOrder('B.PINK & BLACK CHARM','RS 400 (PAIR)',this)">🛒 Order on WhatsApp</button>
+    </div>
+</div>
+</div>
+
+<div class="delivery-bar-wrap">
+  <div class="delivery-bar">
+    <span class="truck-icon">🚚</span>
+    <span class="delivery-text"><strong>Delivery:</strong> RS. 200 shipping charges applicable on every purchase.!</span>
+  </div>
+</div>
+<div class="all-products" id="newproducts"></div>
+
+<hr>
+
+<!-- SEARCH RESULTS -->
+<div id="searchResults" style="display:none;padding:10px 20px 20px">
+  <div class="section-header" style="margin-top:0">
+    <span class="section-title" id="searchResultsTitle">Search Results</span>
+    <div class="section-line"></div>
+    <button class="view-btn" onclick="clearSearch()">✕ Clear</button>
+  </div>
+  <div class="all-products" id="searchResultsGrid" style="display:grid"></div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section" id="reviews-section">
+  <div class="reviews-title">Customer Reviews</div>
+  <div class="reviews-sub">Our Customers love ❤️</div>
+  <div id="reviewsList">
+    <div class="review-card">
+      <div class="review-header">
+        <span class="reviewer-name">Ayesha K.</span>
+        <span style="color:var(--gold)">★★★★★</span>
+      </div>
+      <p class="review-comment">Beautiful quality bracelets! The Moon Bracelet looks exactly like the picture. Very fast coordination on WhatsApp. Highly recommend!</p>
+      <div class="review-date">Verified Customer</div>
+    </div>
+    <div class="review-card">
+      <div class="review-header">
+        <span class="reviewer-name">Sana M.</span>
+        <span style="color:var(--gold)">★★★★★</span>
+      </div>
+      <p class="review-comment">Panda Friendship Charm meri bestie ko gift ki — usse bahut pasand aayi! Quality bohot achhi hai aur packaging bhi neat thi.</p>
+      <div class="review-date">Verified Customer</div>
+    </div>
+    <div class="review-card">
+      <div class="review-header">
+        <span class="reviewer-name">Zara F.</span>
+        <span style="color:var(--gold)">★★★★★</span>
+      </div>
+      <p class="review-comment">Maine Baby Pink aur White Purple dono order ki. Dono perfect hain! WhatsApp pe reply bhi jaldi mili. Will order again! 🥰</p>
+      <div class="review-date">Verified Customer</div>
+    </div>
+  </div>
+
+  <div class="review-form-box">
+    <div class="review-form-title">your Reviews ✍️</div>
+    <div class="star-picker" id="starPicker">
+      <span onclick="setStars(1)">★</span>
+      <span onclick="setStars(2)">★</span>
+      <span onclick="setStars(3)">★</span>
+      <span onclick="setStars(4)">★</span>
+      <span onclick="setStars(5)">★</span>
+    </div>
+    <input class="form-input" type="text" id="reviewerName" placeholder="your name">
+    <textarea class="form-input" id="reviewerText" placeholder="Your experience with our products" rows="3"></textarea>
+    <button class="submit-btn" onclick="addReview()">Review Submit Karein ✓</button>
+  </div>
+
+  <div id="reviewsContainer"></div>
+</div>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://api.whatsapp.com/send/?phone=923187938570&text=Assalam-o-Alaikum%20LUNORA!%20I%20want%20to%20browse%20your%20bracelets." target="_blank" title="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<div class="wa-tooltip">WhatsApp par order karein!</div>
+
+<!-- WISHLIST MODAL -->
+<div id="wishlistModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:1000;align-items:flex-end;justify-content:center">
+  <div style="background:white;width:100%;max-width:500px;max-height:80vh;border-radius:20px 20px 0 0;padding:24px;overflow-y:auto">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+      <span style="font-size:17px;font-weight:700;color:var(--brown)">♡ Wishlist</span>
+      <button onclick="toggleWishlistView()" style="background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-light)">✕</button>
+    </div>
+    <div id="wishlistItems"></div>
+  </div>
+</div>
+
+<script>
+var wishlist = JSON.parse(localStorage.getItem('lunoraWishlist')) || [];
+var selectedStars = 5;
+
+function toggleOrder(id, element) {
+  var container = element.closest('.product-container');
+  var section = container.querySelector('.order-section');
+  if (section) section.style.display = section.style.display === 'block' ? 'none' : 'block';
+}
+
+function toggleView(sliderId, gridId, btn) {
+  var slider = document.getElementById(sliderId);
+  var grid = document.getElementById(gridId);
+  if (!slider || !grid) return;
+  if (grid.style.display === 'grid') {
+    grid.style.display = 'none';
+    slider.style.display = 'flex';
+    btn.textContent = 'View All';
+  } else {
+    grid.innerHTML = slider.innerHTML;
+    grid.style.display = 'grid';
+    slider.style.display = 'none';
+    btn.textContent = 'View Less';
+    grid.querySelectorAll('.wishlist-btn').forEach(function(btn) {
+      var name = btn.getAttribute('data-name');
+      if (wishlist.find(function(w){return w.name===name;})) {
+        btn.classList.add('active');
+        btn.textContent = '♥';
+      }
+    });
+  }
+}
+
+function sendOrder(name, price, element) {
+  var container = element.closest('.product-container');
+  var sel = container ? container.querySelector('.size-select') : null;
+  var size = sel ? sel.value : 'Standard';
+  var phone = '923123566166';
+  var msg = 'Assalam-o-Alaikum LUNORA!\nI want to order:\n\n*Product:* ' + name + '\n*Price:* ' + price + '\n*Size:* ' + size;
+  window.open('https://api.whatsapp.com/send/?phone=' + phone + '&text=' + encodeURIComponent(msg), '_blank');
+}
+
+function toggleWishlist(btn, name, price) {
+  btn.setAttribute('data-name', name);
+  var idx = wishlist.findIndex(function(w){return w.name===name;});
+  if (idx > -1) {
+    wishlist.splice(idx, 1);
+    btn.classList.remove('active');
+    btn.textContent = '♡';
+  } else {
+    wishlist.push({name:name, price:price});
+    btn.classList.add('active');
+    btn.textContent = '♥';
+    showToast('Added to Wishlist! ♥');
+  }
+  localStorage.setItem('lunoraWishlist', JSON.stringify(wishlist));
+  updateWishlistBadge();
+}
+
+function updateWishlistBadge() {
+  var badge = document.getElementById('wlBadge');
+  if (wishlist.length > 0) {
+    badge.style.display = 'flex';
+    badge.textContent = wishlist.length;
+    document.querySelector('.wishlist-count').textContent = '♥';
+    document.querySelector('.wishlist-count').appendChild(badge);
+  } else {
+    badge.style.display = 'none';
+    document.querySelector('.wishlist-count').firstChild.textContent = '♡';
+  }
+}
+
+function toggleWishlistView() {
+  var modal = document.getElementById('wishlistModal');
+  var isOpen = modal.style.display === 'flex';
+  modal.style.display = isOpen ? 'none' : 'flex';
+  if (!isOpen) renderWishlist();
+}
+
+function renderWishlist() {
+  var cont = document.getElementById('wishlistItems');
+  if (wishlist.length === 0) {
+    cont.innerHTML = '<p style="text-align:center;color:var(--text-light);padding:30px 0">Abhi wishlist khali hai. Koi bracelet pasand karein! 🌸</p>';
+    return;
+  }
+  cont.innerHTML = wishlist.map(function(item, i) {
+    return '<div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--border-color)">' +
+      '<div><div style="font-weight:700;font-size:14px;color:var(--text)">' + item.name + '</div><div style="font-size:12px;color:var(--brown);font-weight:600">' + item.price + '</div></div>' +
+      '<div style="display:flex;gap:8px">' +
+      '<button onclick="orderFromWishlist(\'' + item.name + '\',\'' + item.price + '\')" style="background:var(--brown);color:white;border:none;padding:7px 14px;border-radius:8px;font-size:12px;cursor:pointer;font-weight:600">Order</button>' +
+      '<button onclick="removeWishlist(' + i + ')" style="background:none;border:1px solid #eee;padding:7px 10px;border-radius:8px;font-size:13px;cursor:pointer;color:#999">✕</button>' +
+      '</div></div>';
+  }).join('');
+}
+
+function orderFromWishlist(name, price) {
+  var phone = '923187938570';
+  var msg = 'Assalam-o-Alaikum LUNORA!\nI want to order:\n\n*Product:* ' + name + '\n*Price:* ' + price;
+  window.open('https://api.whatsapp.com/send/?phone=' + phone + '&text=' + encodeURIComponent(msg), '_blank');
+}
+
+function removeWishlist(i) {
+  wishlist.splice(i, 1);
+  localStorage.setItem('lunoraWishlist', JSON.stringify(wishlist));
+  updateWishlistBadge();
+  renderWishlist();
+}
+
+function showToast(msg) {
+  var t = document.createElement('div');
+  t.textContent = msg;
+  t.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:var(--brown);color:white;padding:10px 20px;border-radius:20px;font-size:13px;font-weight:600;z-index:9999;animation:fadeUp 0.3s ease';
+  document.body.appendChild(t);
+  setTimeout(function(){t.remove();}, 2000);
+}
+
+function setFilter(cat, el) {
+  document.querySelectorAll('.filter-pill').forEach(function(p){p.classList.remove('active');});
+  el.classList.add('active');
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchResults').style.display = 'none';
+  if (cat === 'all') return;
+  var all = document.querySelectorAll('.product-container');
+  var results = [];
+  all.forEach(function(p) {
+    var cats = (p.getAttribute('data-cat') || '').split(' ');
+    if (cats.indexOf(cat) > -1) results.push(p.cloneNode(true));
+  });
+  showFilterResults(results, cat);
+}
+
+function filterProducts() {
+  var q = document.getElementById('searchInput').value.trim().toLowerCase();
+  if (!q) {
+    document.getElementById('searchResults').style.display = 'none';
+    return;
+  }
+  var all = document.querySelectorAll('.slider .product-container');
+  var results = [];
+  all.forEach(function(p) {
+    var name = (p.getAttribute('data-name') || '').toLowerCase();
+    if (name.indexOf(q) > -1) results.push(p.cloneNode(true));
+  });
+  showFilterResults(results, '"' + q + '"');
+}
+
+function showFilterResults(results, label) {
+  var sec = document.getElementById('searchResults');
+  var grid = document.getElementById('searchResultsGrid');
+  var title = document.getElementById('searchResultsTitle');
+  title.textContent = results.length + ' results for ' + label;
+  if (results.length === 0) {
+    grid.innerHTML = '<p style="color:var(--text-light);padding:20px;grid-column:1/-1;text-align:center">Koi bracelet nahi mili. Dobara try karein!</p>';
+  } else {
+    grid.innerHTML = '';
+    results.forEach(function(el){grid.appendChild(el);});
+  }
+  sec.style.display = 'block';
+  sec.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function clearSearch() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchResults').style.display = 'none';
+  document.querySelectorAll('.filter-pill').forEach(function(p,i){p.classList.toggle('active',i===0);});
+}
+
+function setStars(n) {
+  selectedStars = n;
+  document.querySelectorAll('#starPicker span').forEach(function(s,i){
+    s.classList.toggle('lit', i < n);
+  });
+}
+
+function addReview() {
+  var name = document.getElementById('reviewerName').value.trim();
+  var comment = document.getElementById('reviewerText').value.trim();
+  if (!name || !comment) { alert('Apna naam aur review dono likhein!'); return; }
+  var reviews = JSON.parse(localStorage.getItem('lunoraReviews')) || [];
+  reviews.unshift({name:name, comment:comment, stars:selectedStars, date:new Date().toLocaleDateString('en-PK')});
+  localStorage.setItem('lunoraReviews', JSON.stringify(reviews));
+  document.getElementById('reviewerName').value = '';
+  document.getElementById('reviewerText').value = '';
+  setStars(5);
+  showToast('Review submit ho gaya! Shukriya ❤️');
+  displayReviews();
+}
+
+function displayReviews() {
+  var cont = document.getElementById('reviewsContainer');
+  if (!cont) return;
+  var reviews = JSON.parse(localStorage.getItem('lunoraReviews')) || [];
+  cont.innerHTML = reviews.map(function(r) {
+    var stars = '★'.repeat(r.stars) + '☆'.repeat(5 - r.stars);
+    return '<div class="review-card"><div class="review-header"><span class="reviewer-name">' + r.name + '</span><span style="color:var(--gold)">' + stars + '</span></div><p class="review-comment">' + r.comment + '</p><div class="review-date">Submitted: ' + r.date + '</div></div>';
+  }).join('');
+}
+
+window.onload = function() {
+  displayReviews();
+  updateWishlistBadge();
+  setStars(5);
+  document.querySelectorAll('.product-container').forEach(function(p) {
+    var btn = p.querySelector('.wishlist-btn');
+    if (!btn) return;
+    var name = btn.getAttribute('onclick') || '';
+    var match = name.match(/'([^']+)'/);
+    if (match) {
+      btn.setAttribute('data-name', match[1]);
+      if (wishlist.find(function(w){return w.name===match[1];})) {
+        btn.classList.add('active');
+        btn.textContent = '♥';
+      }
+    }
+  });
+};
+</script>
+
+</body>
+</html>
